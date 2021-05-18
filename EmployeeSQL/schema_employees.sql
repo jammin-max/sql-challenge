@@ -1,18 +1,19 @@
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/REBYWx
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+--Create title Table
 CREATE TABLE titles(
 	title_id VARCHAR PRIMARY KEY,
 	title VARCHAR NOT NULL
 );
 
-
+--Create department table
 CREATE TABLE departments(
 	dept_no VARCHAR PRIMARY KEY,
 	dept_name VARCHAR
 );
 
-
+--Create employees table, and Primary Key, and Foreign key to reference Titles table
 CREATE TABLE employees(
 	emp_no INT PRIMARY KEY,
 	emp_title_id VARCHAR NOT NULL,
@@ -25,7 +26,7 @@ CREATE TABLE employees(
 );
 
 
--- The dept_emp table is many-many relationship, so two primary keys are needed
+-- Create dept_emp table
 CREATE TABLE dept_emp(
 	emp_no INT,
 	dept_no VARCHAR NOT NULL,
@@ -34,7 +35,7 @@ CREATE TABLE dept_emp(
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
 );
 
-
+--Create salaries table, and Primary Key
 CREATE TABLE salaries(
 	emp_no INT PRIMARY KEY,
 	salary INT NOT NULL,
@@ -42,7 +43,7 @@ CREATE TABLE salaries(
 );
 
 
--- The dept_manager table is many-many relationship, so two primary keys are needed
+-- Create dept_manager table 
 CREATE TABLE dept_manager(
 	dept_no VARCHAR NOT NULL,
 	emp_no INT NOT NULL,
