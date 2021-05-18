@@ -1,5 +1,6 @@
 # SQL Homework - Employee Database: A Mystery in Two Parts
 This will be my sql homework submission
+![sql](https://user-images.githubusercontent.com/79048618/118581559-d64bcc80-b75f-11eb-883d-dafc25bbf1f2.png)
 
 Background
 
@@ -19,6 +20,8 @@ Note: You may hear the term "Data Modeling" in place of "Data Engineering," but 
 
 Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool like [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
 /Users/jaminhershberger/Desktop/Homework/sql-challenge/Images/ERD.png
+![ERD](https://user-images.githubusercontent.com/79048618/118581398-9553b800-b75f-11eb-8f00-09b90ff50842.png)
+
 
 * Import each CSV file into the corresponding SQL table. **Note** be sure to import the data in the same order that the tables were created and account for the headers when importing to avoid errors.
 
